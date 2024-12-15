@@ -1,5 +1,7 @@
 body{
     background-color: beige;
+    position: relative;
+    scroll-behavior: smooth;
 }
 ul{
     list-style: none;
@@ -10,6 +12,7 @@ ul{
 .container1{
     width: 100%;
     margin: auto;
+    position: fixed;
 }
 .nav{
     display: flex;
@@ -20,6 +23,9 @@ ul{
     height: 30px;
     font-size: 13px;
     background-color: greenyellow;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .nav ul{
     display: block;
@@ -43,11 +49,11 @@ ul{
 }
 .container2 input{
     float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
 }
 .center{
     text-align: center;
@@ -80,4 +86,83 @@ h5{
 .container5 button:hover{
     background-color: blue;
     text-decoration: underline;
+}
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 calc(25% - 20px); /* 4 Columns with some gap */
+    min-width: 200px;
+}
+
+.footer-column h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ddd;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #fff;
+}
+.footer_bottom {
+    text-align: center; 
+    margin-top: 10px; 
+    border-top: 2px solid #333; 
+    padding-top: 5px; 
+    font-size: 12px; 
+    font-family: Arial, sans-serif; 
+}
+
+.footer-bottom p {
+    margin: 0; 
+    color: #aaa; 
+    font-size: 0.25rem;
+
 }
